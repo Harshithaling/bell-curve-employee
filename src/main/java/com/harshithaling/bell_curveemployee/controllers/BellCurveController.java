@@ -26,7 +26,7 @@ import com.harshithaling.bell_curveemployee.services.BellCurveService;
 @RestController
 
 //allow cross origin request from a specific frontend application
-@CrossOrigin(origins = "http://127.0.0.1:5501")
+@CrossOrigin(origins = "http://127.0.0.1:5500")
 
 
 //used to define a base URL for all the methods in this controller.
