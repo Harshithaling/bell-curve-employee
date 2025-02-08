@@ -8,6 +8,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,6 +25,8 @@ import com.harshithaling.bell_curveemployee.services.BellCurveService;
 //tells Spring that this class will handle HTTP requests and send responses (this is for creating a web API).
 @RestController
 
+//allow cross origin request from a specific frontend application
+@CrossOrigin(origins = "http://127.0.0.1:5501")
 
 
 //used to define a base URL for all the methods in this controller.

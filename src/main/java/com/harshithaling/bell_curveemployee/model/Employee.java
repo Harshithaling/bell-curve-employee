@@ -1,6 +1,9 @@
 package com.harshithaling.bell_curveemployee.model;
 
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,6 +29,7 @@ public class Employee {
 
     //primary key or unique employee id (like a roll numbers in school)
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     //name of the employee
@@ -35,3 +39,5 @@ public class Employee {
     private String ratingCategory;
 
 }
+
+

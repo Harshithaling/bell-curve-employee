@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bell Curve Employee Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bell Curve Employee Performance</h1>
+
+    <!-- Button to Fetch All Employees -->
+    <button onclick="fetchEmployees()">Show Employees</button>
+    <div id="employeeList"></div>
+
+    <!-- Form to Add a New Employee -->
+    <h2>Add Employee</h2>
+    <form id="employeeForm">
+        <input type="text" id="name" placeholder="Employee Name" required>
+        <input type="text" id="ratingCategory" placeholder="Rating (A, B, C, D, E)" required>
+        <button type="submit">Add Employee</button>
+    </form>
+
+    <!-- Button to Analyze Performance -->
+    <button onclick="analyzePerformance()">Analyze Performance</button>
+    <div id="analysisResults"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
