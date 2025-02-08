@@ -86,7 +86,4 @@ A frontend folder named **`bell-curve-frontend`** contains the UI built using HT
 
 This project is open-source and free to use.
 
----
-
-Now you can run the frontend and backend together for a fully functional Bell Curve Performance Appraisal system. 🚀
 
